@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualizador AR</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    <style>
+        body { margin: 0; }
+        model-viewer { width: 100vw; height: 100vh; }
+    </style>
+</head>
+<body>
+    <model-viewer src="seu-modelo.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay>
+        <button slot="ar-button" style="background-color: #007bff; color: white; border: none; border-radius: 8px; padding: 12px; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);">
+            Visualizar em Realidade Aumentada
+        </button>
+    </model-viewer>
+</body>
+</html>
